@@ -1,0 +1,156 @@
+site_name: XtreeE Documentation
+site_description: Robotic concrete 3D printing — guides, wiki and product reference.
+site_url: https://xtreee-felipe.github.io/XtreeE_Docs/
+repo_url: https://github.com/XtreeE-Felipe/XtreeE_Docs
+repo_name: XtreeE-Felipe/XtreeE_Docs
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - toc.follow
+    - content.tabs.link
+    - content.code.copy
+    - search.suggest
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search
+  # The real migration needs these; the prototype has no images and no old URLs.
+  # - redirects:
+  #     redirect_maps: {}
+  # - glightbox
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.snippets:
+      base_path:
+        - docs/snippets
+      check_paths: true
+  - toc:
+      permalink: true
+
+# The snippets folder is an include source, not a set of pages.
+exclude_docs: |
+  snippets/
+
+# Nav is explicit and always will be. The order is the argument, and it should be
+# reviewable in a diff — never inferred alphabetically or by awesome-pages.
+nav:
+  - Home: index.md
+  - Guides:
+      - guides/index.md
+      - Set up the cell:
+          - guides/setup/index.md
+          - Install the Grasshopper plugin: guides/setup/install-the-grasshopper-plugin.md
+          - Install and connect XtreeE Control: guides/setup/install-and-connect-xtreee-control.md
+          - Connect a device to the cell network: guides/setup/connect-a-device-to-the-cell-network.md
+          - Register your equipment in Settings: guides/setup/register-your-equipment-in-settings.md
+          - Teach a print base: guides/setup/teach-a-print-base.md
+          - Request access to XtreeE Library: guides/setup/request-access-to-xtreee-library.md
+      - 1 · Toolpath design:
+          - guides/toolpath-design/index.md
+          - Choose your design route — Library or Grasshopper: guides/toolpath-design/choose-your-design-route-library-or-grasshopper.md
+          - Configure a piece in XtreeE Library: guides/toolpath-design/configure-a-piece-in-xtreee-library.md
+          - Slice a surface in Grasshopper: guides/toolpath-design/slice-a-surface-in-grasshopper.md
+          - Encode a toolpath into an xObject: guides/toolpath-design/encode-a-toolpath-into-an-xobject.md
+          - Inspect a toolpath before export: guides/toolpath-design/inspect-a-toolpath-before-export.md
+          - Export an xObject with traceable metadata: guides/toolpath-design/export-an-xobject-with-traceable-metadata.md
+          - Revise a toolpath and export a new version: guides/toolpath-design/revise-a-toolpath-and-export-a-new-version.md
+          - Read back what an xObject contains: guides/toolpath-design/read-back-what-an-xobject-contains.md
+          - Hand-off check — is this toolpath printable?: guides/toolpath-design/hand-off-check-is-this-toolpath-printable.md
+      - 2 · Program preparation:
+          - guides/program-preparation/index.md
+          - Import an xObject into XtreeE Slice: guides/program-preparation/import-an-xobject-into-xtreee-slice.md
+          - Position the object on a print base: guides/program-preparation/position-the-object-on-a-print-base.md
+          - Set slicing and motion settings: guides/program-preparation/set-slicing-and-motion-settings.md
+          - Plan the print — sequence, stops, layer budget: guides/program-preparation/plan-the-print-sequence-stops-layer-budget.md
+          - Review the simulation: guides/program-preparation/review-the-simulation.md
+          - Export the printing program: guides/program-preparation/export-the-printing-program.md
+          - Specify the recipe and batch volume: guides/program-preparation/specify-the-recipe-and-batch-volume.md
+          - Store a prepared program so the cell can find it: guides/program-preparation/store-a-prepared-program-so-the-cell-can-find-it.md
+          - Hand-off check — program, base and volume agree: guides/program-preparation/hand-off-check-program-base-and-volume-agree.md
+      - 3 · Session start-up:
+          - guides/session-startup/index.md
+          - Choose a prepared program: guides/session-startup/choose-a-prepared-program.md
+          - Power up the cell: guides/session-startup/power-up-the-cell.md
+          - Load the program on the FlexPendant: guides/session-startup/load-the-program-on-the-flexpendant.md
+          - Check tool calibration: guides/session-startup/check-tool-calibration.md
+          - Reset the motors: guides/session-startup/reset-the-motors.md
+          - Verify the Settings table against the cell: guides/session-startup/verify-the-settings-table-against-the-cell.md
+          - Dry-test the program: guides/session-startup/dry-test-the-program.md
+          - Mix the batch to the specified recipe: guides/session-startup/mix-the-batch-to-the-specified-recipe.md
+          - Log the batch and spreading diameter: guides/session-startup/log-the-batch-and-spreading-diameter.md
+          - Hand over the prepared material: guides/session-startup/hand-over-the-prepared-material.md
+          - Session open — motors on, material ready, files loaded: guides/session-startup/session-open-motors-on-material-ready-files-loaded.md
+      - 4 · Printing operation:
+          - guides/printing-operation/index.md
+          - Pre-print check: guides/printing-operation/pre-print-check.md
+          - Start a print — the initialization phase: guides/printing-operation/start-a-print-the-initialization-phase.md
+          - Resume a partial print in a new session: guides/printing-operation/resume-a-partial-print-in-a-new-session.md
+          - Read the printing screen — what to watch: guides/printing-operation/read-the-printing-screen-what-to-watch.md
+          - Adjust material flow: guides/printing-operation/adjust-material-flow.md
+          - Adjust layer width: guides/printing-operation/adjust-layer-width.md
+          - Adjust global performance: guides/printing-operation/adjust-global-performance.md
+          - Pause and resume a print: guides/printing-operation/pause-and-resume-a-print.md
+          - Print the next object in the same session: guides/printing-operation/print-the-next-object-in-the-same-session.md
+          - Stop a print safely: guides/printing-operation/stop-a-print-safely.md
+          - Close the session — purge, park, clean, motors off: guides/printing-operation/close-the-session-purge-park-clean-motors-off.md
+          - Session closed — the log ends here: guides/printing-operation/session-closed-the-log-ends-here.md
+      - 5 · Session report:
+          - guides/session-report/index.md
+          - Review the session in XtreeE Supervise: guides/session-report/review-the-session-in-xtreee-supervise.md
+          - Analyse a printed object — 3D, 2D, material: guides/session-report/analyse-a-printed-object-3d-2d-material.md
+          - Generate a production report: guides/session-report/generate-a-production-report.md
+          - Record a failed or aborted session: guides/session-report/record-a-failed-or-aborted-session.md
+          - Download logs and robot files: guides/session-report/download-logs-and-robot-files.md
+          - Archive a session — xObject, program, batch, report: guides/session-report/archive-a-session-xobject-program-batch-report.md
+          - Trace an object across its sessions: guides/session-report/trace-an-object-across-its-sessions.md
+      - Maintenance & recovery:
+          - guides/maintenance/index.md
+          - Motors won't power on: guides/maintenance/motors-wont-power-on.md
+          - The head prints off-target: guides/maintenance/the-head-prints-off-target.md
+          - Axes lost their reference: guides/maintenance/axes-lost-their-reference.md
+          - Real flow doesn't match assigned flow: guides/maintenance/real-flow-doesnt-match-assigned-flow.md
+          - Need to reach the head: guides/maintenance/need-to-reach-the-head.md
+          - A motor reports an error code: guides/maintenance/a-motor-reports-an-error-code.md
+  - Wiki:
+      - wiki/index.md
+      - Glossary:
+          - Session: wiki/glossary/session.md
+      - The xObject: wiki/the-xobject.md
+      - Toolpath anatomy: wiki/toolpath-anatomy.md
+  - Products:
+      - products/index.md
+      - XtreeE Slice: products/slice.md
+      - XtreeE Control: products/control.md
+      - XtreeE Supervise: products/supervise.md
+      - Grasshopper plugin: products/grasshopper-plugin.md
+      - XtreeE Library: products/library.md

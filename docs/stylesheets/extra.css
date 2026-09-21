@@ -1,0 +1,41 @@
+/* Role and frequency badges — quiet, outlined, never filled.
+   Written in Markdown as *label*{ .badge .role }: attr_list attaches classes to
+   an inline element, and bare [text]{...} is not one, so emphasis carries them
+   and the italics are undone here. */
+.badge {
+  display: inline-block;
+  font-style: normal;
+  padding: 0.05em 0.5em;
+  margin-right: 0.25em;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 2px;
+  font-size: 0.62rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  line-height: 1.7;
+  color: var(--md-default-fg-color--light);
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.badge.role {
+  border-color: var(--md-primary-fg-color);
+  color: var(--md-primary-fg-color);
+}
+
+/* Two-lane layout for Stage 3, and anywhere else the chain forks. */
+.lanes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1.2rem;
+}
+
+.lanes > div {
+  border-left: 2px solid var(--md-default-fg-color--lightest);
+  padding-left: 1rem;
+}
+
+.lanes h3 {
+  margin-top: 0.2rem;
+}

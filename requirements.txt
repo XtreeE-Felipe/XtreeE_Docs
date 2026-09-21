@@ -1,0 +1,4 @@
+mkdocs-material==9.7.6
+# Needed for the real migration, not for the prototype:
+# mkdocs-redirects==1.2.2
+# mkdocs-glightbox==0.5.1

@@ -8,6 +8,10 @@ edit_uri: edit/main/docs/
 theme:
   name: material
   language: en
+  logo: "assests/ICON SVG.svg"
+  favicon: "assests/ICON SVG.svg"
+  icon:
+    logo: "ICON SVG"
   features:
     - navigation.sections
     - navigation.indexes
@@ -20,16 +24,16 @@ theme:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: white
-      accent: indigo
+      accent: custom
       toggle:
-        icon: material/weather-night
+        icon: material/toggle-switch-off-outline
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: blue grey
-      accent: indigo
+      primary: custom
+      accent: custom
       toggle:
-        icon: material/weather-sunny
+        icon: material/toggle-switch
         name: Switch to light mode
 
 extra_css:
@@ -48,6 +52,12 @@ markdown_extensions:
   - md_in_html
   - tables
   - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - docs/assests
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.snippets:

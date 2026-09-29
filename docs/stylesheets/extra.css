@@ -20,8 +20,13 @@
 }
 
 .badge.role {
-  border-color: var(--md-primary-fg-color);
-  color: var(--md-primary-fg-color);
+  border-color: #0d1d3d;
+  color: #0d1d3d;
+}
+
+[data-md-color-scheme="slate"] .badge.role {
+  border-color: #f49819;
+  color: #f49819;
 }
 
 /* Two-lane layout for Stage 3, and anywhere else the chain forks. */
@@ -38,4 +43,27 @@
 
 .lanes h3 {
   margin-top: 0.2rem;
+}
+
+/* Logo is a dark-blue SVG in an <img>; force it white on the dark scheme. */
+[data-md-color-scheme="slate"] .md-header__button.md-logo img {
+  filter: brightness(0) invert(1);
+}
+
+/* Dark-mode top bar colour (needs primary: custom in mkdocs.yml). */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #0d1d3d;
+  --md-primary-bg-color: #ffffff;
+  --md-primary-bg-color--light: #ffffffb3;
+}
+
+/* Accent colour, both schemes (needs accent: custom in mkdocs.yml). */
+[data-md-color-scheme="default"],
+[data-md-color-scheme="slate"] {
+  --md-accent-fg-color: #f49819;
+}
+
+/* Content links default to the primary colour (now dark navy); make them white on dark. */
+[data-md-color-scheme="slate"] {
+  --md-typeset-a-color: #4981f1;
 }

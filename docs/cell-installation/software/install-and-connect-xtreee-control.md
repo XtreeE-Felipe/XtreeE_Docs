@@ -1,15 +1,15 @@
 ---
 type: guide
-stage: setup
+stage: cell-installation
 role: cell-operator
-frequency: per base
+frequency: per workstation
 ---
 
 <!-- PLACEHOLDER CONTENT - verify against product -->
 
-# Teach a print base
+# Install and connect XtreeE Control
 
-*cell operator*{ .badge .role } *per base*{ .badge .freq }
+*cell operator*{ .badge .role } *per workstation*{ .badge .freq }
 
 !!! note "Placeholder page"
     This page exists so the structure can be judged. The headings below are the
@@ -36,7 +36,7 @@ belongs in the [Wiki](../../wiki/index.md) or the [Product pages](../../products
 
 ## If it goes wrong
 
-*Into [Maintenance & recovery](../maintenance/index.md), by symptom.*
+*Into [Maintenance & recovery](../../guides/maintenance/index.md), by symptom.*
 
 ## Next
 

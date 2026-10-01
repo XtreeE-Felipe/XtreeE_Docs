@@ -1,15 +1,15 @@
 ---
 type: guide
-stage: setup
+stage: cell-installation
 role: cell-operator
-frequency: per workstation
+frequency: per base
 ---
 
 <!-- PLACEHOLDER CONTENT - verify against product -->
 
-# Install and connect XtreeE Control
+# Teach a print base
 
-*cell operator*{ .badge .role } *per workstation*{ .badge .freq }
+*cell operator*{ .badge .role } *per base*{ .badge .freq }
 
 !!! note "Placeholder page"
     This page exists so the structure can be judged. The headings below are the
@@ -36,8 +36,8 @@ belongs in the [Wiki](../../wiki/index.md) or the [Product pages](../../products
 
 ## If it goes wrong
 
-*Into [Maintenance & recovery](../maintenance/index.md), by symptom.*
+*Into [Maintenance & recovery](../../guides/maintenance/index.md), by symptom.*
 
 ## Next
 
-[Connect a device to the cell network](connect-a-device-to-the-cell-network.md)
+[Stage 1 · Toolpath design](../../guides/toolpath-design/index.md)

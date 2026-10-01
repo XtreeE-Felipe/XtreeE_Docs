@@ -43,32 +43,19 @@ sit outside any session.
 A session may print several objects, and an object may take several sessions.
 Objects and sessions are **many-to-many**; batches sit under sessions, many to one.
 
-## The two sets outside the chain
+## Before and beside the chain
 
-<div class="lanes" markdown>
-
-<div markdown>
-
-### [Set up the cell](setup/index.md)
-
-**Before** the chain. Done once per installation, workstation, cell or print
-base — not once per session. Forcing these into Stage 3 is the standard mistake:
-you cannot position an object on a base in Stage 2 if teaching that base is a
-Stage 3 task.
-
-</div>
-
-<div markdown>
+The chain assumes a cell that has already been set up. Installation, commissioning
+and one-off configuration live in their own section, [Cell Installation](../cell-installation/index.md) —
+done once per installation, workstation, cell or print base, never once per
+session. Forcing these into Stage 3 is the standard mistake: you cannot position
+an object on a base in Stage 2 if teaching that base is a Stage 3 task.
 
 ### [Maintenance & recovery](maintenance/index.md)
 
 **Beside** the chain. A fault interrupts whichever stage you were in, and it does
 not announce which product owns it. So these pages are indexed **by symptom** —
 what you are seeing, not what you were doing.
-
-</div>
-
-</div>
 
 ## What every guide page looks like
 

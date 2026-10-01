@@ -1,15 +1,15 @@
 ---
 type: guide
-stage: setup
-role: designer
-frequency: once
+stage: cell-installation
+role: integrator
+frequency: per device
 ---
 
 <!-- PLACEHOLDER CONTENT - verify against product -->
 
-# Request access to XtreeE Library
+# Connect a device to the cell network
 
-*designer*{ .badge .role } *once*{ .badge .freq }
+*integrator*{ .badge .role } *per device*{ .badge .freq }
 
 !!! note "Placeholder page"
     This page exists so the structure can be judged. The headings below are the
@@ -36,8 +36,8 @@ belongs in the [Wiki](../../wiki/index.md) or the [Product pages](../../products
 
 ## If it goes wrong
 
-*Into [Maintenance & recovery](../maintenance/index.md), by symptom.*
+*Into [Maintenance & recovery](../../guides/maintenance/index.md), by symptom.*
 
 ## Next
 
-[Stage 1 · Toolpath design](../toolpath-design/index.md)
+[Register your equipment in Settings](register-your-equipment-in-settings.md)

@@ -9,17 +9,18 @@ the prose.
 
 ## What's here
 
-Three parallel top-level sections:
+Four top-level sections:
 
 | Section | Answers | State |
 |---|---|---|
-| **Guides** | How do I do X | Built in full — 60 pages across 7 sets |
+| **Cell Installation** | How do I get a cell ready to print with | 7 pages, stubbed |
+| **Guides** | How do I do X (in production) | Built in full — 53 pages across 6 sets |
 | **Wiki** | Why does it work this way | Stubbed, except the *session* glossary entry |
 | **Products** | What does this field do | Stubbed — 5 pages |
 
 The Guides are a **relay**: five numbered stages, one operator role each, one
-named artefact handed across every boundary, plus *Set up the cell* before the
-chain and *Maintenance & recovery* beside it, indexed by symptom.
+named artefact handed across every boundary, plus *Maintenance & recovery*
+beside it, indexed by symptom. *Cell Installation* is its own section, before the chain.
 
 ### The three written guides
 
@@ -74,9 +75,11 @@ prevent.
 ```
 docs/
   index.md
+  cell-installation/       # before the chain — install, commission, configure
+    software/              # per workstation
+    printing-cell/         # per cell, device, base
   guides/
     index.md               # the whole chain
-    setup/                 # before the chain
     toolpath-design/       # 1 · designer
     program-preparation/   # 2 · print preparer
     session-startup/       # 3 · cell operator + material operator (two lanes)

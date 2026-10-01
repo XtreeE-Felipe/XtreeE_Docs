@@ -4,10 +4,17 @@ type: home
 
 # XtreeE documentation
 
-Robotic concrete 3D printing, documented in three parallel sets. Each answers a
+Robotic concrete 3D printing, documented in four sets. Each answers a
 different question, and no page tries to answer two.
 
 <div class="grid cards" markdown>
+
+- ### [Cell Installation](cell-installation/index.md)
+
+    **How do I get a cell ready to print with?**
+
+    Installation, commissioning and one-off configuration — done once per
+    installation, workstation, cell or print base, never once per session.
 
 - ### [Guides](guides/index.md)
 
@@ -15,7 +22,7 @@ different question, and no page tries to answer two.
 
     The production chain, from geometry to archived session. Five numbered stages,
     one operator role each, one named artefact handed across every boundary — plus
-    cell setup before the chain and maintenance beside it.
+    maintenance beside it.
 
 - ### [Wiki](wiki/index.md)
 
@@ -37,7 +44,7 @@ different question, and no page tries to answer two.
 
 | If you are… | Go to |
 |---|---|
-| Setting up a new cell or workstation | [Set up the cell](guides/setup/index.md) |
+| Setting up a new cell or workstation | [Cell Installation](cell-installation/index.md) |
 | Designing a piece | [Stage 1 · Toolpath design](guides/toolpath-design/index.md) |
 | Preparing a program at your desk | [Stage 2 · Program preparation](guides/program-preparation/index.md) |
 | Opening a session in the cell | [Stage 3 · Session start-up](guides/session-startup/index.md) |

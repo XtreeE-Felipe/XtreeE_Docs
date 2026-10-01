@@ -1,15 +1,15 @@
 ---
 type: guide
-stage: setup
+stage: cell-installation
 role: designer
-frequency: per workstation
+frequency: once
 ---
 
 <!-- PLACEHOLDER CONTENT - verify against product -->
 
-# Install the Grasshopper plugin
+# Request access to XtreeE Library
 
-*designer*{ .badge .role } *per workstation*{ .badge .freq }
+*designer*{ .badge .role } *once*{ .badge .freq }
 
 !!! note "Placeholder page"
     This page exists so the structure can be judged. The headings below are the
@@ -36,8 +36,8 @@ belongs in the [Wiki](../../wiki/index.md) or the [Product pages](../../products
 
 ## If it goes wrong
 
-*Into [Maintenance & recovery](../maintenance/index.md), by symptom.*
+*Into [Maintenance & recovery](../../guides/maintenance/index.md), by symptom.*
 
 ## Next
 
-[Install and connect XtreeE Control](install-and-connect-xtreee-control.md)
+[Connect a device to the cell network](../printing-cell/connect-a-device-to-the-cell-network.md)

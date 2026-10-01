@@ -75,16 +75,18 @@ exclude_docs: |
 # reviewable in a diff — never inferred alphabetically or by awesome-pages.
 nav:
   - Home: index.md
-  - Guides:
+  - Cell installation:
+      - cell-installation/index.md
+      - Software:
+          - Install the Grasshopper plugin: cell-installation/software/install-the-grasshopper-plugin.md
+          - Install and connect XtreeE Control: cell-installation/software/install-and-connect-xtreee-control.md
+          - Request access to XtreeE Library: cell-installation/software/request-access-to-xtreee-library.md
+      - Printing Cell:
+          - Connect a device to the cell network: cell-installation/printing-cell/connect-a-device-to-the-cell-network.md
+          - Register your equipment in Settings: cell-installation/printing-cell/register-your-equipment-in-settings.md
+          - Teach a print base: cell-installation/printing-cell/teach-a-print-base.md
+  - Operation guide:
       - guides/index.md
-      - Set up the cell:
-          - guides/setup/index.md
-          - Install the Grasshopper plugin: guides/setup/install-the-grasshopper-plugin.md
-          - Install and connect XtreeE Control: guides/setup/install-and-connect-xtreee-control.md
-          - Connect a device to the cell network: guides/setup/connect-a-device-to-the-cell-network.md
-          - Register your equipment in Settings: guides/setup/register-your-equipment-in-settings.md
-          - Teach a print base: guides/setup/teach-a-print-base.md
-          - Request access to XtreeE Library: guides/setup/request-access-to-xtreee-library.md
       - 1 · Toolpath design:
           - guides/toolpath-design/index.md
           - Choose your design route — Library or Grasshopper: guides/toolpath-design/choose-your-design-route-library-or-grasshopper.md
@@ -155,12 +157,11 @@ nav:
       - wiki/index.md
       - Glossary:
           - Session: wiki/glossary/session.md
-      - The xObject: wiki/the-xobject.md
-      - Toolpath anatomy: wiki/toolpath-anatomy.md
+          - The xObject: wiki/the-xobject.md
+          - Toolpath anatomy: wiki/toolpath-anatomy.md
   - Products:
       - products/index.md
       - XtreeE Slice: products/slice.md
       - XtreeE Control: products/control.md
       - XtreeE Supervise: products/supervise.md
-      - Grasshopper plugin: products/grasshopper-plugin.md
       - XtreeE Library: products/library.md

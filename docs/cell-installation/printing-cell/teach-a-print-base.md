@@ -1,6 +1,6 @@
 ---
 type: guide
-stage: setup
+stage: cell-installation
 role: cell-operator
 frequency: per base
 ---
@@ -36,8 +36,8 @@ belongs in the [Wiki](../../wiki/index.md) or the [Product pages](../../products
 
 ## If it goes wrong
 
-*Into [Maintenance & recovery](../maintenance/index.md), by symptom.*
+*Into [Maintenance & recovery](../../guides/maintenance/index.md), by symptom.*
 
 ## Next
 
-[Request access to XtreeE Library](request-access-to-xtreee-library.md)
+[Stage 1 · Toolpath design](../../guides/toolpath-design/index.md)

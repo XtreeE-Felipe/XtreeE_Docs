@@ -71,6 +71,11 @@ markdown_extensions:
 exclude_docs: |
   snippets/
 
+# Fail --strict on any page under docs/ that is missing from the nav.
+validation:
+  nav:
+    omitted_files: warn
+
 # Nav is explicit and always will be. The order is the argument, and it should be
 # reviewable in a diff — never inferred alphabetically or by awesome-pages.
 nav:
@@ -164,4 +169,5 @@ nav:
       - XtreeE Slice: products/slice.md
       - XtreeE Control: products/control.md
       - XtreeE Supervise: products/supervise.md
+      - Grasshopper plugin: products/grasshopper-plugin.md
       - XtreeE Library: products/library.md

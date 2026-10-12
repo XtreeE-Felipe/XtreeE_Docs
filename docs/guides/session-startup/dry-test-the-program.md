@@ -2,7 +2,7 @@
 type: guide
 stage: session-startup
 role: cell-operator
-frequency: per-session
+frequency: per session
 ---
 
 <!-- PLACEHOLDER CONTENT - verify against product -->

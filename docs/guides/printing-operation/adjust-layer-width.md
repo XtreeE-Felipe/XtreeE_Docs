@@ -2,7 +2,7 @@
 type: guide
 stage: printing-operation
 role: print-operator
-frequency: as-needed
+frequency: as needed
 ---
 
 <!-- PLACEHOLDER CONTENT - verify against product -->

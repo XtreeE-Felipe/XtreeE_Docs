@@ -2,7 +2,7 @@
 type: guide
 stage: toolpath-design
 role: designer
-frequency: per-version
+frequency: per version
 ---
 
 <!-- PLACEHOLDER CONTENT - verify against product -->

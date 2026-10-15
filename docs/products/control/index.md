@@ -29,7 +29,7 @@ which gives access to the four pages **CONTROL**, **SETTINGS**, **INK** and
 **DATA**.
 
 *[Screenshot: home screen]*
-<!-- IMAGE: image 2.png -->
+<!-- IMAGE: Control_HomeScreen.png -->
 
 ## Top bar
 
@@ -39,7 +39,7 @@ Every page has the same top bar:
 - in the white box, the status of the system.
 
 *[Screenshot: top bar]*
-<!-- IMAGE: image 3.png -->
+<!-- IMAGE: Control_TopBar.png -->
 
 ### Page buttons
 
@@ -56,7 +56,7 @@ the process. The button has two colours:
 | Green | actual printing |
 
 *[Screenshot: printing-mode button in the top bar]*
-<!-- IMAGE: image 4.png -->
+<!-- IMAGE: Control_Top_PrintingMode.png -->
 
 <!-- TODO: needs source — "How to print an object ?" page referenced by the source for the full printing process -->
 
@@ -76,7 +76,7 @@ In case of errors, the **INFO** button gives the error code of each motor. `0`
 means no error.
 
 *[Screenshot: status box with INFO button]*
-<!-- IMAGE: 898986d1-d3ec-4915-be9f-bf62f7f2ea1b.png -->
+<!-- IMAGE: XtreeE_Status.png -->
 
 *[Screenshot: motor error codes]*
 <!-- IMAGE: Control_ErrorCodes.png -->
@@ -87,7 +87,7 @@ The white box also shows a message when an action does not work. **CLEAR**
 deletes the message.
 
 *[Screenshot: message in the status box]*
-<!-- IMAGE: Control_JogError.png -->
+<!-- IMAGE: Control_JogErrorToClear.png -->
 
 ## Motor control panel
 
@@ -104,12 +104,12 @@ Every controlled motor has the same control panel:
 | Torque rate | The "effort". `100%` means the rated torque is reached. |
 
 *[Screenshot: motor control panel]*
-<!-- IMAGE: 7e84a981-6130-4d21-bc90-35e7626cba52.png -->
+<!-- IMAGE: Control_MotorControlPanel.png -->
 
 The keyboard used to type a value:
 
 *[Screenshot: on-screen keyboard]*
-<!-- IMAGE: 313a9e81-1234-4c10-996f-1790f08cc1e6.png -->
+<!-- IMAGE: Control_OnScreenKeyboard.png -->
 
 ## Pump flow update
 
@@ -127,7 +127,7 @@ procedure is in
 | **BACK TO FACTORY** | Resets the value to the one defined in factory. |
 
 *[Screenshot: pump flow update window]*
-<!-- IMAGE: image 5.png -->
+<!-- IMAGE: Control_FlowRateUpdateWindow.png -->
 
 ## SPRINT option: AUTO mode for pump CF
 
@@ -141,10 +141,10 @@ pump starts, stops and changes speed automatically. Clicking **AUTO** enables or
 disables control from the panel.
 
 *[Screenshot: pump CF panel with AUTO button]*
-<!-- IMAGE: image 6.png -->
+<!-- IMAGE: Control_AUTOButton.png -->
 
 *[Screenshot: AUTO mode on]*
-<!-- IMAGE: PID_ON.png -->
+<!-- IMAGE: Control_AUTOModeON.png -->
 
 During a print, AUTO mode cannot be disabled — only during a pause. See
 [Printing control](printing-control.md#initialization-pause).

@@ -34,6 +34,3 @@ to the cell network — smartphone, tablet, laptop. Open the browser and go to
 
 *[Screenshot: browser address]*
 <!-- IMAGE: Untitled.png -->
-
-*[Screenshot: monitoring page in a browser]*
-<!-- IMAGE: image 15.png -->

@@ -17,8 +17,7 @@ During a print, this page is replaced by [Printing control](printing-control.md)
 Each motor is controlled by its output speed, before reduction. This mode does
 not depend on any flow, which makes it useful when monitoring motor health.
 
-*[Screenshot: Control — speed sub-page]*
-<!-- IMAGE: Controlspeed.png -->
+![Control — speed sub-page](../../assets/control/Controlspeed.png)
 
 ## Flow control
 
@@ -29,8 +28,7 @@ Each motor is controlled by its effective value:
 
 The motor speed is shown on the left of the control panel.
 
-*[Screenshot: Control — flow sub-page]*
-<!-- IMAGE: Controlflows.png -->
+![Control — flow sub-page](../../assets/control/Controlflows.png)
 
 ## Proportion control
 
@@ -38,8 +36,7 @@ The same as flow control, except that admixture pumps are controlled in
 proportion to concrete: the AD pumps accelerate when the concrete flow rate is
 increased.
 
-*[Screenshot: Control — proportion sub-page]*
-<!-- IMAGE: Controlproportions.png -->
+![Control — proportion sub-page](../../assets/control/Controlproportions.png)
 
 ## Maintenance
 
@@ -52,7 +49,6 @@ All motors must be stopped before the window is opened.
 
 Motors can be run normally again once the window is closed.
 
-*[Screenshot: Maintenance window]*
-<!-- IMAGE: image 7.png -->
+![Maintenance window](../../assets/control/image%207.png)
 
 <!-- TODO: needs source — when a 1/6-rotation jog is needed -->

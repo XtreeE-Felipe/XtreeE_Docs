@@ -19,8 +19,7 @@ is in
 | **RESET COUNTER** | Resets the batch identification number. |
 | Spreading diameters | Logs the current value and shows it in the graph below, between acceptable values. |
 
-*[Screenshot: Ink page]*
-<!-- IMAGE: image 12.png -->
+![Ink page](../../assets/control/image%2012.png)
 
 <!-- TODO: needs source — acceptable spreading-diameter values -->
 
@@ -30,12 +29,10 @@ is in
 references and quantities — can be edited. Click **SAVE** when finished, or
 **CLOSE** to ignore the changes.
 
-*[Screenshot: recipe window]*
-<!-- IMAGE: INKrecipe.png -->
+![Recipe window](../../assets/control/INKrecipe.png)
 
 ## The "custom" recipe
 
 The recipe called "custom" is temporary. Use it to test new recipes.
 
-*[Screenshot: custom recipe]*
-<!-- IMAGE: INKrecipecustom.png -->
+![Custom recipe](../../assets/control/INKrecipecustom.png)

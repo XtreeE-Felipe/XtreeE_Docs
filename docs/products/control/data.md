@@ -12,19 +12,16 @@ all the live data, and a 10-minute history of the main data as graphs.
 | Orange | sensors — temperatures, pressures |
 | Blue | motors — speeds, torques |
 
-*[Screenshot: Data page]*
-<!-- IMAGE: DATA.png -->
+![Data page](../../assets/control/DATA.png)
 
 ## Graphs
 
 Values marked with a small coloured dot are the ones shown in the graphs, in the
 colour of their dot.
 
-*[Screenshot: values with coloured dots]*
-<!-- IMAGE: image 13.png -->
+![Values with coloured dots](../../assets/control/image%2013.png)
 
-*[Screenshot: history graphs]*
-<!-- IMAGE: image 14.png -->
+![History graphs](../../assets/control/image%2014.png)
 
 ## Viewing from a web browser
 
@@ -32,5 +29,4 @@ The monitoring page can also be viewed in a web browser, on any device connected
 to the cell network — smartphone, tablet, laptop. Open the browser and go to
 `https://192.168.13.5/`.
 
-*[Screenshot: browser address]*
-<!-- IMAGE: Untitled.png -->
+![Browser address](../../assets/control/Untitled.png)

@@ -29,8 +29,7 @@ independent.
 On systems with the SPRINT option, AUTO mode cannot be disabled during printing —
 only during a pause. See [SPRINT option](index.md#sprint-option-auto-mode-for-pump-cf).
 
-*[Screenshot: printing control]*
-<!-- IMAGE: image 8.png -->
+![Printing control](../../assets/control/image%208.png)
 
 ## Usage rate
 
@@ -44,8 +43,7 @@ bar:
 | Line | the nominal value |
 | Extra rectangle around the nominal value | only for a variable-flow program: the extremum values of the current program |
 
-*[Screenshot: usage rate bars]*
-<!-- IMAGE: image 9.png -->
+![Usage rate bars](../../assets/control/image%209.png)
 
 ## Program data
 
@@ -58,15 +56,13 @@ bar:
 - Volume left to be printed
 - Progress
 
-*[Screenshot: program data]*
-<!-- IMAGE: image 10.png -->
+![Program data](../../assets/control/image%2010.png)
 
 ## Flows
 
 Admixture proportion is controlled by a percentage on each AD pump.
 
-*[Screenshot: printing control — flows sub-page]*
-<!-- IMAGE: printflows.png -->
+![Printing control — flows sub-page](../../assets/control/printflows.png)
 
 ## Width
 
@@ -82,8 +78,7 @@ The admixture proportion is fixed here, so a change in concrete flow induces a
 change in the activated AD pumps. Watch the [usage rates](#usage-rate) on
 the left.
 
-*[Screenshot: printing control — width sub-page]*
-<!-- IMAGE: image 11.png -->
+![Printing control — width sub-page](../../assets/control/image%2011.png)
 
 ## Performance
 
@@ -91,8 +86,7 @@ Accelerates or decelerates the global process without changing the material or
 the extruded layer: a change in the performance factor changes every motor.
 Watch the [usage rates](#usage-rate) on the left.
 
-*[Screenshot: printing control — performance sub-page]*
-<!-- IMAGE: printfperf.png -->
+![Printing control — performance sub-page](../../assets/control/printfperf.png)
 
 ## Initialization / Pause
 
@@ -114,8 +108,6 @@ The buttons to the next step are at the bottom right of the screen:
 | Initialization | **START** |
 | Pause | **CONTINUE**, **QUIT** |
 
-*[Screenshot: initialization page]*
-<!-- IMAGE: Printing_Calibration.png -->
+![Initialization page](../../assets/control/Printing_Calibration.png)
 
-*[Screenshot: pause page]*
-<!-- IMAGE: Printing_Maintenance.png -->
+![Pause page](../../assets/control/Printing_Maintenance.png)

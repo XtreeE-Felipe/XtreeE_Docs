@@ -15,9 +15,15 @@ Every fact on a page must trace to a source in `_sources/`. No exceptions for
   the real application by the product owner on 2026-10-12 and counts as a
   source. Change its values only from a newer source.
 - **Images:** screenshots and figures from `_sources/` may be copied into
-  `docs/assets/<product>/` (e.g. `docs/assets/control/`) and committed. Until an
-  image is copied, mark its place with a visible text placeholder followed by a
-  comment naming the source file:
+  `docs/assets/<product>/` (e.g. `docs/assets/control/`) and committed. Keep
+  the source file name, so every image traces back to its source, and embed it
+  with its caption as alt text:
+
+  ```markdown
+  ![<what it shows>](../../assets/<product>/<source file name>)
+  ```
+
+  An image not yet copied is marked with a visible text placeholder instead:
 
   ```markdown
   *[Screenshot: <what it shows>]*

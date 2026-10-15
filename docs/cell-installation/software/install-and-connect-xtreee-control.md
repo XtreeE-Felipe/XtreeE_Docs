@@ -22,11 +22,9 @@ controller switched on, and the computer connected to it.
 3. Set the server address to `192.168.13.5` and apply **Fit to screen size**.
 4. Click **OK**.
 
-    *[Screenshot: HMWin Client settings]*
-    <!-- IMAGE: image.png -->
+    ![HMWin Client settings](../../assets/control/image.png)
 
-    *[Screenshot: server address and Fit to screen size]*
-    <!-- IMAGE: image 1.png -->
+    ![Server address and Fit to screen size](../../assets/control/image%201.png)
 
 From now on, opening HMWin Client loads XtreeE Control automatically. It is
 connected once it displays the

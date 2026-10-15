@@ -28,8 +28,7 @@ When HMWin Client opens, it loads automatically and displays the home screen,
 which gives access to the four pages **CONTROL**, **SETTINGS**, **INK** and
 **DATA**.
 
-*[Screenshot: home screen]*
-<!-- IMAGE: Control_HomeScreen.png -->
+![Home screen](../../assets/control/Control_HomeScreen.png)
 
 ## Top bar
 
@@ -38,8 +37,7 @@ Every page has the same top bar:
 - on the left, the navigation between pages;
 - in the white box, the status of the system.
 
-*[Screenshot: top bar]*
-<!-- IMAGE: Control_TopBar.png -->
+![Top bar](../../assets/control/Control_TopBar.png)
 
 ### Page buttons
 
@@ -55,8 +53,7 @@ the process. The button has two colours:
 | Orange | printing standby — during initialization and pause |
 | Green | actual printing |
 
-*[Screenshot: printing-mode button in the top bar]*
-<!-- IMAGE: Control_Top_PrintingMode.png -->
+![Printing-mode button in the top bar](../../assets/control/Control_Top_PrintingMode.png)
 
 <!-- TODO: needs source — "How to print an object ?" page referenced by the source for the full printing process -->
 
@@ -75,19 +72,16 @@ The white box shows one of three statuses:
 In case of errors, the **INFO** button gives the error code of each motor. `0`
 means no error.
 
-*[Screenshot: status box with INFO button]*
-<!-- IMAGE: XtreeE_Status.png -->
+![Status box with INFO button](../../assets/control/XtreeE_Status.png)
 
-*[Screenshot: motor error codes]*
-<!-- IMAGE: Control_ErrorCodes.png -->
+![Motor error codes](../../assets/control/Control_ErrorCodes.png)
 
 <!-- TODO: needs source — meaning of each non-zero motor error code -->
 
 The white box also shows a message when an action does not work. **CLEAR**
 deletes the message.
 
-*[Screenshot: message in the status box]*
-<!-- IMAGE: Control_JogErrorToClear.png -->
+![Message in the status box](../../assets/control/Control_JogErrorToClear.png)
 
 ## Motor control panel
 
@@ -103,13 +97,11 @@ Every controlled motor has the same control panel:
 | Converted additional values | The assigned value, expressed in another unit. |
 | Torque rate | The "effort". `100%` means the rated torque is reached. |
 
-*[Screenshot: motor control panel]*
-<!-- IMAGE: Control_MotorControlPanel.png -->
+![Motor control panel](../../assets/control/Control_MotorControlPanel.png)
 
 The keyboard used to type a value:
 
-*[Screenshot: on-screen keyboard]*
-<!-- IMAGE: Control_OnScreenKeyboard.png -->
+![On-screen keyboard](../../assets/control/Control_OnScreenKeyboard.png)
 
 ## Pump flow update
 
@@ -126,8 +118,7 @@ procedure is in
 | **NO** | Quits without updating; the previous flow is kept. |
 | **BACK TO FACTORY** | Resets the value to the one defined in factory. |
 
-*[Screenshot: pump flow update window]*
-<!-- IMAGE: Control_FlowRateUpdateWindow.png -->
+![Pump flow update window](../../assets/control/Control_FlowRateUpdateWindow.png)
 
 ## SPRINT option: AUTO mode for pump CF
 
@@ -140,11 +131,9 @@ pressure. The **AUTO** mode button on its control panel does exactly that: the
 pump starts, stops and changes speed automatically. Clicking **AUTO** enables or
 disables control from the panel.
 
-*[Screenshot: pump CF panel with AUTO button]*
-<!-- IMAGE: Control_AUTOButton.png -->
+![Pump CF panel with AUTO button](../../assets/control/Control_AUTOButton.png)
 
-*[Screenshot: AUTO mode on]*
-<!-- IMAGE: Control_AUTOModeON.png -->
+![AUTO mode on](../../assets/control/Control_AUTOModeON.png)
 
 During a print, AUTO mode cannot be disabled — only during a pause. See
 [Printing control](printing-control.md#initialization-pause).

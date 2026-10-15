@@ -24,17 +24,13 @@ This section sits **before the [production chain](../guides/index.md)**. Everyth
 
 Per workstation — the desk-side tools used by designers and print preparers.
 
-1. [Install the Grasshopper plugin](software/install-the-grasshopper-plugin.md) — *per workstation*
 1. [Install and connect XtreeE Control](software/install-and-connect-xtreee-control.md) — *per workstation*
-1. [Request access to XtreeE Library](software/request-access-to-xtreee-library.md) — *once*
 
 ### Printing Cell
 
 Per cell — the robot, its devices and its print bases.
 
-1. [Connect a device to the cell network](printing-cell/connect-a-device-to-the-cell-network.md) — *per device*
 1. [Register your equipment in Settings](printing-cell/register-your-equipment-in-settings.md) — *per cell*
-1. [Teach a print base](printing-cell/teach-a-print-base.md) — *per base*
 
 
 ## Then

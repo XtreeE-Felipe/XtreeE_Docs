@@ -5,39 +5,30 @@ role: material-operator
 frequency: per batch
 ---
 
-<!-- PLACEHOLDER CONTENT - verify against product -->
-
 # Log the batch and spreading diameter
 
 *material operator*{ .badge .role } *per batch*{ .badge .freq }
 
-!!! note "Placeholder page"
-    This page exists so the structure can be judged. The headings below are the
-    template every guide fills; the italic notes say what belongs in each slot.
+Record each batch, with its spreading diameter, in the
+[Ink](../../products/control/ink.md) page of XtreeE Control. You need the recipe
+and batch volume, and the measured spreading diameter. The result is a logged
+batch with its own identification number.
 
-## Before you start
+<!-- TODO: needs source — how the spreading diameter is measured -->
 
-*The named artefact you must hold, the access you need, the state the cell must be
-in. All of it linked — never restated.*
+1. Open **INK**.
+2. Select the recipe and define the batch volume. The summary shows the recipe
+   computed for that volume.
+3. To read or edit the recipe first, click **SEE RECIPE**, edit the framed fields
+   (references and quantities), then click **SAVE** — or **CLOSE** to ignore the
+   changes. To test a new recipe, use the temporary "custom" recipe.
+4. Click **NEW BATCH** and note the batch identification number.
+5. Enter the spreading diameter.
 
-## You'll produce
+The batch is logged once it has its identification number and its spreading
+diameter appears in the graph, between the acceptable values.
 
-*The named output, in one line. This is the hand-off.*
+<!-- TODO: needs source — acceptable spreading-diameter values -->
+<!-- TODO: needs source — what to do when the spreading diameter falls outside the acceptable values -->
 
-## Steps
-
-1. *Numbered, imperative, screenshots inline. Parameters are
-   [linked](../../products/index.md), never redefined.*
-
-## Done when
-
-*A verifiable end state. If this line can't be written, this isn't a guide — it
-belongs in the [Wiki](../../wiki/index.md) or the [Product pages](../../products/index.md).*
-
-## If it goes wrong
-
-*Into [Maintenance & recovery](../maintenance/index.md), by symptom.*
-
-## Next
-
-[Hand over the prepared material](hand-over-the-prepared-material.md)
+**Next:** [Stage 4 · Printing operation](../printing-operation/index.md)

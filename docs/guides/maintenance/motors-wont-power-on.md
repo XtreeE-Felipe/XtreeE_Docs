@@ -5,39 +5,19 @@ role: cell-operator
 frequency: on symptom
 ---
 
-<!-- PLACEHOLDER CONTENT - verify against product -->
-
 # Motors won't power on
 
 *cell operator*{ .badge .role } *on symptom*{ .badge .freq }
 
-!!! note "Placeholder page"
-    This page exists so the structure can be judged. The headings below are the
-    template every guide fills; the italic notes say what belongs in each slot.
+When the [status box](../../products/control/index.md#status-box) of XtreeE
+Control reads **NO ERRORS - POWER OFF**, the motors are not powered and need to
+be reset. If it reads **ERRORS** instead, a motor has an error — go to
+[A motor reports an error code](a-motor-reports-an-error-code.md).
 
-## Before you start
+To reset the motors:
 
-*The named artefact you must hold, the access you need, the state the cell must be
-in. All of it linked — never restated.*
+<!-- TODO: needs source — motor reset procedure ("How to reset the motors ?" in XtreeE Control source) -->
 
-## You'll produce
+The motors are ready once the status box reads **NO ERRORS - POWER ON**.
 
-*The named output, in one line. This is the hand-off.*
-
-## Steps
-
-1. *Numbered, imperative, screenshots inline. Parameters are
-   [linked](../../products/index.md), never redefined.*
-
-## Done when
-
-*A verifiable end state. If this line can't be written, this isn't a guide — it
-belongs in the [Wiki](../../wiki/index.md) or the [Product pages](../../products/index.md).*
-
-## If it goes wrong
-
-*Into [Maintenance & recovery](../maintenance/index.md), by symptom.*
-
-## Next
-
-[The head prints off-target](the-head-prints-off-target.md)
+**Next:** [Real flow doesn't match assigned flow](real-flow-doesnt-match-assigned-flow.md)

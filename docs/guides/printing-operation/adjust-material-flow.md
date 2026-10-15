@@ -5,39 +5,31 @@ role: print-operator
 frequency: as needed
 ---
 
-<!-- PLACEHOLDER CONTENT - verify against product -->
-
 # Adjust material flow
 
 *print operator*{ .badge .role } *as needed*{ .badge .freq }
 
-!!! note "Placeholder page"
-    This page exists so the structure can be judged. The headings below are the
-    template every guide fills; the italic notes say what belongs in each slot.
+During a print, the **Flows** sub-page of
+[Printing control](../../products/control/printing-control.md#flows) adjusts the
+material: the admixture proportion of each AD pump. Watch the
+[usage rates](read-the-printing-screen-what-to-watch.md) before and after.
 
-## Before you start
+1. Open the **Flows** sub-page.
+2. Set the percentage on each AD pump.
 
-*The named artefact you must hold, the access you need, the state the cell must be
-in. All of it linked — never restated.*
+    <!-- TODO: needs source — how to adjust the concrete flow itself on the Flows sub-page -->
 
-## You'll produce
+3. Watch the [usage rates](../../products/control/printing-control.md#usage-rate).
 
-*The named output, in one line. This is the hand-off.*
+The adjustment is done once each AD pump shows the percentage you set and every
+live value stays inside its extremum values.
 
-## Steps
+## Parameter limits
 
-1. *Numbered, imperative, screenshots inline. Parameters are
-   [linked](../../products/index.md), never redefined.*
+--8<-- "parameter-limits.md"
 
-## Done when
+!!! tip "If something goes wrong"
+    Real flow differs from the assigned flow → [Real flow doesn't match assigned flow](../maintenance/real-flow-doesnt-match-assigned-flow.md)<br>
+    **ERRORS** in the status box → [A motor reports an error code](../maintenance/a-motor-reports-an-error-code.md)
 
-*A verifiable end state. If this line can't be written, this isn't a guide — it
-belongs in the [Wiki](../../wiki/index.md) or the [Product pages](../../products/index.md).*
-
-## If it goes wrong
-
-*Into [Maintenance & recovery](../maintenance/index.md), by symptom.*
-
-## Next
-
-[Adjust layer width](adjust-layer-width.md)
+**Next:** [Adjust layer width](adjust-layer-width.md)

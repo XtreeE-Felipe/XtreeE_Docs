@@ -5,39 +5,34 @@ role: print-operator
 frequency: per object
 ---
 
-<!-- PLACEHOLDER CONTENT - verify against product -->
-
 # Start a print — the initialization phase
 
 *print operator*{ .badge .role } *per object*{ .badge .freq }
 
-!!! note "Placeholder page"
-    This page exists so the structure can be judged. The headings below are the
-    template every guide fills; the italic notes say what belongs in each slot.
+Before automatic printing begins, XtreeE Control shows the
+[Initialization](../../products/control/printing-control.md#initialization-pause)
+page: the program is loaded with its pointer at the start, and you prepare each
+motor for the print. You need an open [session](../../wiki/glossary/session.md)
+and XtreeE Control in printing mode — the printing button in the top bar is
+orange.
 
-## Before you start
+<!-- TODO: needs source — how to load a program and enter printing mode ("How to print an object ?" in XtreeE Control source) -->
 
-*The named artefact you must hold, the access you need, the state the cell must be
-in. All of it linked — never restated.*
+1. Read the target of each component: the next values applied in automatic
+   printing mode.
+2. Control each motor one by one, as on the
+   [Control screen](../../products/control/control-screen.md).
 
-## You'll produce
+    <!-- TODO: needs source — what to prepare on each motor before START -->
 
-*The named output, in one line. This is the hand-off.*
+3. On a system with the SPRINT option, AUTO mode for pump CF switches on
+   automatically if it was off. You can still switch it off here.
+4. Click **START**, at the bottom right of the screen.
 
-## Steps
+The print has started once the printing button in the top bar turns green.
 
-1. *Numbered, imperative, screenshots inline. Parameters are
-   [linked](../../products/index.md), never redefined.*
+!!! tip "If something goes wrong"
+    **NO ERRORS - POWER OFF** in the status box → [Motors won't power on](../maintenance/motors-wont-power-on.md)<br>
+    **ERRORS** in the status box → [A motor reports an error code](../maintenance/a-motor-reports-an-error-code.md)
 
-## Done when
-
-*A verifiable end state. If this line can't be written, this isn't a guide — it
-belongs in the [Wiki](../../wiki/index.md) or the [Product pages](../../products/index.md).*
-
-## If it goes wrong
-
-*Into [Maintenance & recovery](../maintenance/index.md), by symptom.*
-
-## Next
-
-[Resume a partial print in a new session](resume-a-partial-print-in-a-new-session.md)
+**Next:** [Read the printing screen — what to watch](read-the-printing-screen-what-to-watch.md)

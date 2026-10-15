@@ -10,7 +10,19 @@ Every fact on a page must trace to a source in `_sources/`. No exceptions for
 
 - **Sources of truth:** only files in `_sources/` (repo root). It is
   local-only — gitignored and outside `docs/`, so MkDocs never reads it. Never
-  copy source files into `docs/` or commit them.
+  copy source files into `docs/` or commit them — **except images** (see below).
+- **Signed-off pages:** `docs/snippets/parameter-limits.md` was verified against
+  the real application by the product owner on 2026-10-12 and counts as a
+  source. Change its values only from a newer source.
+- **Images:** screenshots and figures from `_sources/` may be copied into
+  `docs/assets/<product>/` (e.g. `docs/assets/control/`) and committed. Until an
+  image is copied, mark its place with a visible text placeholder followed by a
+  comment naming the source file:
+
+  ```markdown
+  *[Screenshot: <what it shows>]*
+  <!-- IMAGE: <source file name> -->
+  ```
 - **Facts that need a source:** UI labels, button and menu names, parameter
   names, ranges and defaults, error codes, controller/robot behaviour, speeds,
   percentages, durations, material values, file formats, product capabilities.
@@ -24,9 +36,13 @@ Every fact on a page must trace to a source in `_sources/`. No exceptions for
   `<!-- TODO: needs source — <what is missing> -->`
   Never fill the gap with a guess, an example value, or vague filler that hides
   the gap.
-- **Removing the PLACEHOLDER marker:** only when every specific on the page has
-  been replaced or confirmed from `_sources/`. A page with any open TODO keeps
-  the marker.
+- **The PLACEHOLDER marker means invented content.** No page may carry it:
+  delete placeholder pages rather than publish them. A page whose facts are all
+  sourced but which still has open TODOs is *incomplete*, not a placeholder —
+  it is published with its TODOs visible.
+- **Write only what is sourced.** A page exists only once a source backs its
+  core; gaps inside it are TODOs. Stage landing pages list only guides that
+  exist.
 - **Report:** after editing, list which source file backs each new fact and
   every TODO left behind.
 - Structure, headings, links and wording of instructions are yours to write;
@@ -63,6 +79,10 @@ Ask before introducing a new value.
 
 ## Guide page template
 
+A guide reads as a short piece of prose with steps in it, not a form. Every
+guide carries the same **five beats, in this order** — but only the body may
+use headings.
+
 ```markdown
 ---
 type: guide
@@ -75,25 +95,48 @@ frequency: <frequency>
 
 *<role in words>*{ .badge .role } *<frequency>*{ .badge .freq }
 
-<One short paragraph: what this does and why it matters here.>
+<Opening: what this does, when you need it, what you need first.>
 
-## Before you start
-## You'll produce
-## Steps
-## Done when
-## If it goes wrong
-## Next
+<Body: one numbered list, or ## sections named after the phases.>
+
+<End state: one sentence the reader can check.>
+
+!!! tip "If something goes wrong"
+    <symptom> → [<maintenance page>](...)
+
+**Next:** [<following page in the nav>](...)
 ```
 
-- **Before you start:** required artefacts, access and cell state — linked, never restated.
-- **You'll produce:** the named output in one line (the hand-off).
-- **Steps:** numbered, imperative. Controller-specific steps go in content tabs (`=== "ABB"`).
-- **Done when:** a verifiable end state. If it can't be written, the page belongs in the Wiki or Products.
-- **If it goes wrong:** links into Maintenance & recovery, by symptom.
-- **Next:** link to the following page in the nav.
+1. **Opening** — one paragraph, at most three sentences: what the guide does,
+   when you need it, and what must be in hand first (artefacts, access, cell
+   state, earlier guides) — all linked, never restated. Name the hand-off here
+   if the guide produces one. No `Before you start` / `You'll produce` headings.
+2. **Body** — the steps, imperative.
+   - **One phase:** a single numbered list, no heading.
+   - **Several phases** (e.g. pause → while paused → resume): one `##` section
+     per phase, titled with a short noun or verb phrase. Inside, a numbered list
+     or one or two sentences — whichever is shorter.
+   - Controller-specific steps go in content tabs (`=== "ABB"`).
+   - Parameter limits: a `## Parameter limits` section with the snippet include.
+3. **End state** — one sentence, placed right after the step that reaches it,
+   naming something the reader can see or measure ("The motors are ready once
+   the status box reads **NO ERRORS - POWER ON**."). No `Done when` heading. If
+   no such sentence can be written, the page belongs in the Wiki or Products.
+4. **If something goes wrong** — optional. Only when there is a Maintenance page
+   to link: a `!!! tip "If something goes wrong"` box, one `symptom → link`
+   line per symptom, at the end of the body. Never an empty section.
+5. **Next** — always the last line: `**Next:** [<page>](...)`, the following
+   page in the nav (or the next stage landing page).
 
-Use admonitions (`!!! warning`, `!!! note`) sparingly, for consequences the
-reader must not miss.
+Admonitions, sparingly:
+
+- `!!! warning` — a consequence the reader must not miss, placed before the
+  step it concerns.
+- `!!! note` — a fact about the product the reader would otherwise trip on.
+- `!!! tip "If something goes wrong"` — reserved for beat 4.
+
+TODO markers sit where the missing content would go, inside the beat it
+belongs to.
 
 ## Language and tone
 

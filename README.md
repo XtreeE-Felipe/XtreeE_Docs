@@ -1,11 +1,12 @@
-# XtreeE_Docs — structural prototype
+# XtreeE_Docs
 
-A working MkDocs + Material site built to test **one thing**: whether the
-production-chain structure holds up when every page actually exists.
+An MkDocs + Material site for robotic concrete 3D printing, organised as a
+production chain.
 
-**The content is placeholder.** Three guides are written properly; everything
-else is a template stub that is honest about being one. Judge the structure, not
-the prose.
+**Content is source-only.** Every fact traces to a source in `_sources/`
+(local-only, see `CLAUDE.md`). Pages are added as sources arrive; nothing is
+published as a placeholder. Gaps inside a page are marked
+`<!-- TODO: needs source — … -->`.
 
 ## What's here
 
@@ -13,27 +14,18 @@ Four top-level sections:
 
 | Section | Answers | State |
 |---|---|---|
-| **Cell Installation** | How do I get a cell ready to print with | 7 pages, stubbed |
-| **Guides** | How do I do X (in production) | Built in full — 53 pages across 6 sets |
-| **Wiki** | Why does it work this way | Stubbed, except the *session* glossary entry |
-| **Products** | What does this field do | Stubbed — 5 pages |
+| **Cell Installation** | How do I get a cell ready to print with | 2 guides |
+| **Guides** | How do I do X (in production) | 11 guides; stages 1, 2 and 5 have none yet |
+| **Wiki** | Why does it work this way | the *session* glossary entry |
+| **Products** | What does this field do | XtreeE Control, 6 pages |
 
 The Guides are a **relay**: five numbered stages, one operator role each, one
 named artefact handed across every boundary, plus *Maintenance & recovery*
 beside it, indexed by symptom. *Cell Installation* is its own section, before the chain.
 
-### The three written guides
-
-- `docs/guides/toolpath-design/export-an-xobject-with-traceable-metadata.md` —
-  the xObject-is-immutable rule, links out to both a Wiki and a Product page
-- `docs/guides/session-startup/dry-test-the-program.md` —
-  content tabs for ABB vs other controllers, sits just before the session-open gate
-- `docs/guides/printing-operation/adjust-layer-width.md` —
-  parameter limits pulled in by snippet include, plus a warning admonition
-
-Any page carrying `<!-- PLACEHOLDER CONTENT - verify against product -->` has
-invented specifics in it. That includes the three written ones — the structure
-is real, the UI details need checking against the software.
+Every landing page is kept, so the navigation structure stays fixed while pages
+are filled in. Screenshots are marked with text placeholders until the images
+are copied into `docs/assets/`.
 
 ## Run it locally
 
@@ -88,6 +80,8 @@ docs/
     maintenance/           # beside the chain, by symptom
   wiki/
   products/
+    control/               # XtreeE Control, one page per screen
+  assets/                  # logo and product screenshots
   snippets/                # include source, excluded from the build as pages
   stylesheets/extra.css    # badge and two-lane styling
 mkdocs.yml

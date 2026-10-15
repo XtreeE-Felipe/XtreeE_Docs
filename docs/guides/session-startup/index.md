@@ -28,13 +28,7 @@ This stage runs in **two lanes with two operators**: a robot lane and a material
 
 *cell operator*{ .badge .role } *per session*{ .badge .freq }
 
-1. [Choose a prepared program](choose-a-prepared-program.md) — *per session*
-1. [Power up the cell](power-up-the-cell.md) — *per session*
-1. [Load the program on the FlexPendant](load-the-program-on-the-flexpendant.md) — *per session*
-1. [Check tool calibration](check-tool-calibration.md) — *per session*
-1. [Reset the motors](reset-the-motors.md) — *per session*
 1. [Verify the Settings table against the cell](verify-the-settings-table-against-the-cell.md) — *per session*
-1. [Dry-test the program](dry-test-the-program.md) — *per session*
 
 </div>
 
@@ -44,9 +38,7 @@ This stage runs in **two lanes with two operators**: a robot lane and a material
 
 *material operator*{ .badge .role } *per batch*{ .badge .freq }
 
-1. [Mix the batch to the specified recipe](mix-the-batch-to-the-specified-recipe.md) — *per batch*
 1. [Log the batch and spreading diameter](log-the-batch-and-spreading-diameter.md) — *per batch*
-1. [Hand over the prepared material](hand-over-the-prepared-material.md) — *per batch*
 
 </div>
 
@@ -56,7 +48,7 @@ The two lanes run **in parallel** and rejoin at the gate below. Neither lane ope
 
 ## The gate
 
-1. [Session open — motors on, material ready, files loaded](session-open-motors-on-material-ready-files-loaded.md) — *per session* · **gate**
+No gate guide is published yet.
 
 Passing it is the moment the [session](../../wiki/glossary/session.md) opens: motors on, material ready, files loaded.
 

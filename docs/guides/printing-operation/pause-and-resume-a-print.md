@@ -5,39 +5,43 @@ role: print-operator
 frequency: as needed
 ---
 
-<!-- PLACEHOLDER CONTENT - verify against product -->
-
 # Pause and resume a print
 
 *print operator*{ .badge .role } *as needed*{ .badge .freq }
 
-!!! note "Placeholder page"
-    This page exists so the structure can be judged. The headings below are the
-    template every guide fills; the italic notes say what belongs in each slot.
+A pause stops automatic printing without losing your place: the program stays
+loaded with its pointer where the print stopped, and you can control each motor
+one by one before carrying on. See the
+[Pause](../../products/control/printing-control.md#initialization-pause) page
+reference.
 
-## Before you start
+## Pause
 
-*The named artefact you must hold, the access you need, the state the cell must be
-in. All of it linked — never restated.*
+On any Printing control sub-page, click **GO TO MAINTENANCE**. The printing
+button in the top bar turns orange.
 
-## You'll produce
+<!-- TODO: needs source — confirm GO TO MAINTENANCE is the pause control, and what the pause does to the robot -->
 
-*The named output, in one line. This is the hand-off.*
+## While paused
 
-## Steps
+Control each motor as needed. Each component shows its target — the values
+applied as soon as automatic printing resumes.
 
-1. *Numbered, imperative, screenshots inline. Parameters are
-   [linked](../../products/index.md), never redefined.*
+On a system with the SPRINT option, AUTO mode for pump CF switches on
+automatically if it was off. You can switch it off here, which is not possible
+while printing.
 
-## Done when
+## Resume or quit
 
-*A verifiable end state. If this line can't be written, this isn't a guide — it
-belongs in the [Wiki](../../wiki/index.md) or the [Product pages](../../products/index.md).*
+At the bottom right of the screen, click **CONTINUE** to resume. The printing
+button turns green again.
 
-## If it goes wrong
+Click **QUIT** to leave the program instead.
 
-*Into [Maintenance & recovery](../maintenance/index.md), by symptom.*
+<!-- TODO: needs source — what QUIT does to the program and the print -->
 
-## Next
+!!! tip "If something goes wrong"
+    **ERRORS** in the status box → [A motor reports an error code](../maintenance/a-motor-reports-an-error-code.md)<br>
+    **NO ERRORS - POWER OFF** → [Motors won't power on](../maintenance/motors-wont-power-on.md)
 
-[Print the next object in the same session](print-the-next-object-in-the-same-session.md)
+**Next:** [Stage 5 · Session report](../session-report/index.md)

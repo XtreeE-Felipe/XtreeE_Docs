@@ -41,5 +41,4 @@ Stages 1, 2 and 5 fall outside any session.
 ## A failed session is still a session
 
 "Successful or not" is load-bearing. An aborted print produces a session record
-exactly as a completed one does — see
-[Record a failed or aborted session](../../guides/session-report/record-a-failed-or-aborted-session.md).
+exactly as a completed one does.

@@ -5,39 +5,30 @@ role: integrator
 frequency: per cell
 ---
 
-<!-- PLACEHOLDER CONTENT - verify against product -->
-
 # Register your equipment in Settings
 
 *integrator*{ .badge .role } *per cell*{ .badge .freq }
 
-!!! note "Placeholder page"
-    This page exists so the structure can be judged. The headings below are the
-    template every guide fills; the italic notes say what belongs in each slot.
+The [Settings](../../products/control/settings.md) page of XtreeE Control holds
+the reference of every functional device. Set them once per cell, so XtreeE
+Control describes the equipment actually installed. You need XtreeE Control
+running — see
+[Install and connect XtreeE Control](../software/install-and-connect-xtreee-control.md)
+— and the references of the installed equipment.
 
-## Before you start
+<!-- TODO: needs source — where the installed equipment references are found -->
 
-*The named artefact you must hold, the access you need, the state the cell must be
-in. All of it linked — never restated.*
+1. Open **SETTINGS**.
+2. Click the small button linked to the device to update.
+3. Select the new reference in the dropdown lists, then click **APPLY**.
+4. For a pump, click **BACK TO FACTORY** to reset its values — always after
+   **APPLY**, never before.
+5. Repeat for every device.
 
-## You'll produce
+The equipment is registered once the
+[summary table](../../products/control/settings.md#summary-table) shows the
+reference of every installed device.
 
-*The named output, in one line. This is the hand-off.*
+<!-- TODO: needs source — what to do when a reference is missing from the dropdown lists -->
 
-## Steps
-
-1. *Numbered, imperative, screenshots inline. Parameters are
-   [linked](../../products/index.md), never redefined.*
-
-## Done when
-
-*A verifiable end state. If this line can't be written, this isn't a guide — it
-belongs in the [Wiki](../../wiki/index.md) or the [Product pages](../../products/index.md).*
-
-## If it goes wrong
-
-*Into [Maintenance & recovery](../../guides/maintenance/index.md), by symptom.*
-
-## Next
-
-[Teach a print base](teach-a-print-base.md)
+**Next:** [Stage 1 · Toolpath design](../../guides/toolpath-design/index.md)

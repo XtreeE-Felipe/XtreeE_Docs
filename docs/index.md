@@ -51,8 +51,3 @@ different question, and no page tries to answer two.
 | Printing right now | [Stage 4 · Printing operation](guides/printing-operation/index.md) |
 | Reporting on a finished session | [Stage 5 · Session report](guides/session-report/index.md) |
 | Looking at a fault | [Maintenance & recovery](guides/maintenance/index.md) |
-
-!!! note "This is a structural prototype"
-    Almost every page is a placeholder. Three guides are written properly so the
-    page template can be judged. See the [README](https://github.com/XtreeE-Felipe/XtreeE_Docs)
-    for what is real and what is not.

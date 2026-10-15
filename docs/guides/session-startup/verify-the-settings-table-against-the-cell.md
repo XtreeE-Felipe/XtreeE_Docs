@@ -5,39 +5,26 @@ role: cell-operator
 frequency: per session
 ---
 
-<!-- PLACEHOLDER CONTENT - verify against product -->
-
 # Verify the Settings table against the cell
 
 *cell operator*{ .badge .role } *per session*{ .badge .freq }
 
-!!! note "Placeholder page"
-    This page exists so the structure can be judged. The headings below are the
-    template every guide fills; the italic notes say what belongs in each slot.
+The [Settings](../../products/control/settings.md) table is a summary of the
+system you are about to print with — check it before printing. The equipment
+must already be registered: see
+[Register your equipment in Settings](../../cell-installation/printing-cell/register-your-equipment-in-settings.md).
 
-## Before you start
+1. Open **SETTINGS** and read the table on the right, device by device.
+2. Compare each value with the equipment installed in the cell.
 
-*The named artefact you must hold, the access you need, the state the cell must be
-in. All of it linked — never restated.*
+    <!-- TODO: needs source — which values to check, and against what -->
 
-## You'll produce
+3. If a reference is wrong, update it as in
+   [Register your equipment in Settings](../../cell-installation/printing-cell/register-your-equipment-in-settings.md).
 
-*The named output, in one line. This is the hand-off.*
+The table is verified once every device in it matches the equipment installed in
+the cell.
 
-## Steps
+<!-- TODO: needs source — what to do when the table cannot be made to match the cell -->
 
-1. *Numbered, imperative, screenshots inline. Parameters are
-   [linked](../../products/index.md), never redefined.*
-
-## Done when
-
-*A verifiable end state. If this line can't be written, this isn't a guide — it
-belongs in the [Wiki](../../wiki/index.md) or the [Product pages](../../products/index.md).*
-
-## If it goes wrong
-
-*Into [Maintenance & recovery](../maintenance/index.md), by symptom.*
-
-## Next
-
-[Dry-test the program](dry-test-the-program.md)
+**Next:** [Log the batch and spreading diameter](log-the-batch-and-spreading-diameter.md)

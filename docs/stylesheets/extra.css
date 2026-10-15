@@ -67,3 +67,13 @@
 [data-md-color-scheme="slate"] {
   --md-typeset-a-color: #4981f1;
 }
+
+/* Use the full browser width instead of Material's 61rem centred grid. */
+.md-grid {
+  max-width: initial;
+}
+
+/* Body text slightly smaller than Material's 0.8rem default. */
+.md-typeset {
+  font-size: 0.75rem;
+}

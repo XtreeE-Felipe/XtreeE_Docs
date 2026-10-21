@@ -23,17 +23,8 @@ This set sits **beside the chain**. A fault interrupts whichever stage you were 
 ??? question "Motors won't power on"
     [Go to the recovery guide](motors-wont-power-on.md)
 
-??? question "The head prints off-target"
-    [Go to the recovery guide](the-head-prints-off-target.md)
-
-??? question "Axes lost their reference"
-    [Go to the recovery guide](axes-lost-their-reference.md)
-
 ??? question "Real flow doesn't match assigned flow"
     [Go to the recovery guide](real-flow-doesnt-match-assigned-flow.md)
-
-??? question "Need to reach the head"
-    [Go to the recovery guide](need-to-reach-the-head.md)
 
 ??? question "A motor reports an error code"
     [Go to the recovery guide](a-motor-reports-an-error-code.md)

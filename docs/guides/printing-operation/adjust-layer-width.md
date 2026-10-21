@@ -5,81 +5,39 @@ role: print-operator
 frequency: as needed
 ---
 
-<!-- PLACEHOLDER CONTENT - verify against product -->
-
 # Adjust layer width
 
 *print operator*{ .badge .role } *as needed*{ .badge .freq }
 
-Mid-print correction when the deposited bead is measurably wider or narrower
-than the program assumed — usually because the material is behaving differently
-from the batch the recipe was sized against.
+Layer width is a direct result of the ratio between material flow rate and robot
+speed. During a print, the **Width** sub-page of
+[Printing control](../../products/control/printing-control.md#width) corrects it,
+and lets you choose which machine absorbs the change. Start from the current
+layer width in the
+[program data](../../products/control/printing-control.md#program-data).
 
-## Before you start
+<!-- TODO: needs source — how to decide the width correction needed -->
 
-- A print running, with the [session](../../wiki/glossary/session.md) open.
-- A measurement, not an impression: caliper the last completed layer in at least
-  three places. Adjusting on how it looks from the gantry is how a print drifts.
-- The program's assigned width to hand, from the printing screen in
-  [XtreeE Control](../../products/control.md).
+!!! warning "A width change moves the admixture pumps too"
+    The admixture proportion is fixed on this sub-page. If the pump absorbs the
+    change, the concrete flow changes — and the activated AD pumps change with
+    it. Keep an eye on the
+    [usage rates](../../products/control/printing-control.md#usage-rate).
 
-## You'll produce
+1. Open the **Width** sub-page.
+2. Enter the width correction, in mm. It can be negative.
+3. Select the machine that absorbs the change: the robot or the pump.
+4. Watch the usage rates on the left.
 
-A bead whose measured width matches the assigned width, with flow and pump load
-still inside their limits.
-
-!!! warning "Width does not move alone"
-    Layer width is delivered by material flow at a given travel speed. Raising
-    width raises the flow the pump must sustain, and on a variable-proportion
-    head it raises admixture pump load with it. Push width up far enough and you
-    hit the flow ceiling before you hit the width ceiling — at which point the
-    system honours flow and quietly under-delivers width.
-
-    Change width in small steps and re-measure. If you need more than about
-    20 % correction, the batch is wrong, not the setting:
-    [Real flow doesn't match assigned flow](../maintenance/real-flow-doesnt-match-assigned-flow.md).
-
-## Steps
-
-1. On the printing screen, note the currently assigned **layer width** and
-   **flow rate**.
-2. Measure the last completed layer in three places and take the mean.
-3. Enter the corrected width in the width field. Values are constrained to the
-   table below — the field will refuse anything outside it.
-4. Confirm. The change takes effect at the start of the next segment, not
-   immediately.
-5. Let one full layer deposit, then re-measure. Repeat at most twice.
-6. If flow has risen to its ceiling, stop adjusting width and
-   [adjust material flow](adjust-material-flow.md) or revisit the batch.
-7. Note the change and the reason in the session log — Stage 5 will ask why the
-   printed object does not match the program.
+The correction is applied once the **Width** sub-page shows your correction and
+selected machine, and every live value stays inside its extremum values.
 
 ## Parameter limits
 
-These values are defined once, in one file, and included wherever they are
-mentioned. Never restate them in prose.
-
 --8<-- "parameter-limits.md"
 
-Field-by-field definitions live in
-[XtreeE Control](../../products/control.md); the physics of why width, flow and
-speed are one setting in three costumes lives in
-[Toolpath anatomy](../../wiki/toolpath-anatomy.md).
+!!! tip "If something goes wrong"
+    Real flow differs from the assigned flow → [Real flow doesn't match assigned flow](../maintenance/real-flow-doesnt-match-assigned-flow.md)<br>
+    **ERRORS** in the status box → [A motor reports an error code](../maintenance/a-motor-reports-an-error-code.md)
 
-## Done when
-
-Measured bead width is within tolerance of assigned width across three
-consecutive layers, and flow rate has settled below its ceiling.
-
-## If it goes wrong
-
-- Width won't hold after two corrections →
-  [Real flow doesn't match assigned flow](../maintenance/real-flow-doesnt-match-assigned-flow.md)
-- The bead is the right width but landing off-path →
-  [The head prints off-target](../maintenance/the-head-prints-off-target.md)
-- You need to reach the nozzle to clear it →
-  [Need to reach the head](../maintenance/need-to-reach-the-head.md)
-
-## Next
-
-[Adjust global performance](adjust-global-performance.md)
+**Next:** [Adjust global performance](adjust-global-performance.md)

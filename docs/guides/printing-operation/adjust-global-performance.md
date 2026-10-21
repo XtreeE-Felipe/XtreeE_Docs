@@ -5,39 +5,31 @@ role: print-operator
 frequency: as needed
 ---
 
-<!-- PLACEHOLDER CONTENT - verify against product -->
-
 # Adjust global performance
 
 *print operator*{ .badge .role } *as needed*{ .badge .freq }
 
-!!! note "Placeholder page"
-    This page exists so the structure can be judged. The headings below are the
-    template every guide fills; the italic notes say what belongs in each slot.
+During a print, the **Performance** sub-page of
+[Printing control](../../products/control/printing-control.md#performance)
+accelerates or decelerates the whole process without changing the material or
+the extruded layer.
 
-## Before you start
+!!! warning "Every motor follows"
+    A change in the performance factor changes every motor. The
+    [usage rate](../../products/control/printing-control.md#usage-rate) shows how
+    far the global performance can change — keep an eye on it.
 
-*The named artefact you must hold, the access you need, the state the cell must be
-in. All of it linked — never restated.*
+1. Open the **Performance** sub-page.
+2. Change the performance factor.
 
-## You'll produce
+    <!-- TODO: needs source — how the performance factor is entered, and its range -->
 
-*The named output, in one line. This is the hand-off.*
+3. Watch the usage rates on the left.
 
-## Steps
+The change is applied once the live values of the motors have moved on the usage
+rate, and every one stays inside its extremum values.
 
-1. *Numbered, imperative, screenshots inline. Parameters are
-   [linked](../../products/index.md), never redefined.*
+!!! tip "If something goes wrong"
+    **ERRORS** in the status box → [A motor reports an error code](../maintenance/a-motor-reports-an-error-code.md)
 
-## Done when
-
-*A verifiable end state. If this line can't be written, this isn't a guide — it
-belongs in the [Wiki](../../wiki/index.md) or the [Product pages](../../products/index.md).*
-
-## If it goes wrong
-
-*Into [Maintenance & recovery](../maintenance/index.md), by symptom.*
-
-## Next
-
-[Pause and resume a print](pause-and-resume-a-print.md)
+**Next:** [Pause and resume a print](pause-and-resume-a-print.md)

@@ -59,15 +59,14 @@ what you are seeing, not what you were doing.
 
 ## What every guide page looks like
 
-| Slot | Content |
+Every guide reads as short prose with steps in it, and always in the same order:
+
+| Beat | Content |
 |---|---|
-| Front-matter | `type` · `stage` · `role` · `frequency` — lintable, drives the badges |
-| Title | **Imperative.** "Position the object on a print base" |
-| Before you start | The artefact you must hold, access, cell state. All links. |
-| You'll produce | The named output. One line. This is the hand-off. |
-| Steps | Numbered, imperative. Parameters linked, never redefined. |
-| Done when | A verifiable end state. If you can't write it, it isn't a guide. |
-| If it goes wrong | Into Maintenance & recovery, by symptom. |
+| Opening | What the guide does, when you need it, what you need first — all linked. |
+| Steps | Numbered and imperative. Longer guides split into one section per phase. |
+| End state | One sentence you can check: how you know it worked. |
+| If something goes wrong | Optional box linking into Maintenance & recovery, by symptom. |
 | Next | The next guide in the chain — the site reads forward on its own. |
 
 **Gates are self-checks.** Nothing is signed and nothing is filed; a gate exists

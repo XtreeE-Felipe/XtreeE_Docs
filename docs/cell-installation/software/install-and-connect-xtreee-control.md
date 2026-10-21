@@ -5,39 +5,34 @@ role: cell-operator
 frequency: per workstation
 ---
 
-<!-- PLACEHOLDER CONTENT - verify against product -->
-
 # Install and connect XtreeE Control
 
 *cell operator*{ .badge .role } *per workstation*{ .badge .freq }
 
-!!! note "Placeholder page"
-    This page exists so the structure can be judged. The headings below are the
-    template every guide fills; the italic notes say what belongs in each slot.
+[XtreeE Control](../../products/control/index.md) is opened through HMWin
+Client. Install it once on each computer used to run the cell. You need the xHEAD
+controller switched on, and the computer connected to it.
 
-## Before you start
+<!-- TODO: needs source — how the computer is physically connected to the xHEAD controller -->
 
-*The named artefact you must hold, the access you need, the state the cell must be
-in. All of it linked — never restated.*
+1. Download and install HMWin Client from the
+   [HMWin product page (Panasonic)](https://industry.panasonic.eu/products/automation-devices-solutions/human-machine-interfaces/hmi-programming-software/programming-software-hm-series-hmwin).
+   The current version is 4.5.2 build 650.
+2. Open HMWin Client and click the settings.
+3. Set the server address to `192.168.13.5` and apply **Fit to screen size**.
+4. Click **OK**.
 
-## You'll produce
+    *[Screenshot: HMWin Client settings]*
+    <!-- IMAGE: image.png -->
 
-*The named output, in one line. This is the hand-off.*
+    *[Screenshot: server address and Fit to screen size]*
+    <!-- IMAGE: image 1.png -->
 
-## Steps
+From now on, opening HMWin Client loads XtreeE Control automatically. It is
+connected once it displays the
+[home screen](../../products/control/index.md#home-screen), with the
+**CONTROL**, **SETTINGS**, **INK** and **DATA** pages.
 
-1. *Numbered, imperative, screenshots inline. Parameters are
-   [linked](../../products/index.md), never redefined.*
+<!-- TODO: needs source — what to do when HMWin Client does not load the home screen -->
 
-## Done when
-
-*A verifiable end state. If this line can't be written, this isn't a guide — it
-belongs in the [Wiki](../../wiki/index.md) or the [Product pages](../../products/index.md).*
-
-## If it goes wrong
-
-*Into [Maintenance & recovery](../../guides/maintenance/index.md), by symptom.*
-
-## Next
-
-[Request access to XtreeE Library](request-access-to-xtreee-library.md)
+**Next:** [Register your equipment in Settings](../printing-cell/register-your-equipment-in-settings.md)

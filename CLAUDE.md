@@ -5,12 +5,24 @@ printing. See `README.md` for structure and layout.
 
 ## Rule zero: never invent information
 
-Every fact on a page must trace to a source in `_sources/`. No exceptions for
+Every fact on a page must trace to an approved source. No exceptions for
 "plausible", "typical" or "industry-standard" values.
 
-- **Sources of truth:** only files in `_sources/` (repo root). It is
-  local-only — gitignored and outside `docs/`, so MkDocs never reads it. Never
-  copy source files into `docs/` or commit them.
+- **Sources of truth** — only these two:
+  - **Notion**, read through the Notion connector — these root pages and their
+    descendants only:
+    - **XtreeE Software** — <https://app.notion.com/p/1a0566d0114080cebc4be9006d786fc3>
+    - **Guides** — <https://app.notion.com/p/304566d0114080ba989af566f9d1c9f9>
+    - **XtreeE Library** — <https://app.notion.com/p/fa5a8371ddfa4c5fae866ba8ae1fce51>
+    - **XtreeE Supervise** — <https://app.notion.com/p/99f6cf7053a44baf873fac7b571ba71a>
+    - **XtreeE Simulate** — <https://app.notion.com/p/60d1c68d88f14713a6d19717770013ea>
+
+    Confirm a page sits under one of these roots before citing it. Other Notion
+    pages — even ones named after a product — are not sources.
+  - **`_sources/`** (repo root): local-only — gitignored and outside `docs/`, so
+    MkDocs never reads it. Never copy source files into `docs/` or commit them.
+- **Conflicts:** when Notion and `_sources/` disagree, Notion wins. Mention the
+  conflict in the report.
 - **Facts that need a source:** UI labels, button and menu names, parameter
   names, ranges and defaults, error codes, controller/robot behaviour, speeds,
   percentages, durations, material values, file formats, product capabilities.
@@ -25,10 +37,10 @@ Every fact on a page must trace to a source in `_sources/`. No exceptions for
   Never fill the gap with a guess, an example value, or vague filler that hides
   the gap.
 - **Removing the PLACEHOLDER marker:** only when every specific on the page has
-  been replaced or confirmed from `_sources/`. A page with any open TODO keeps
-  the marker.
-- **Report:** after editing, list which source file backs each new fact and
-  every TODO left behind.
+  been replaced or confirmed from an approved source. A page with any open TODO
+  keeps the marker.
+- **Report:** after editing, list the source backing each new fact (Notion page
+  title + URL, or `_sources/` file path) and every TODO left behind.
 - Structure, headings, links and wording of instructions are yours to write;
   facts are not.
 

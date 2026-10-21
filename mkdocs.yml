@@ -16,6 +16,8 @@ theme:
     - navigation.sections
     - navigation.indexes
     - navigation.top
+    - navigation.footer
+    - navigation.path
     - toc.follow
     - content.tabs.link
     - content.code.copy
@@ -41,6 +43,10 @@ extra_css:
 
 plugins:
   - search
+  # "Last updated" on every page, from git history (CI checks out full history).
+  - git-revision-date-localized:
+      type: date
+      fallback_to_build_date: true
   # The real migration needs these; the prototype has no images and no old URLs.
   # - redirects:
   #     redirect_maps: {}
@@ -80,7 +86,7 @@ validation:
 # reviewable in a diff — never inferred alphabetically or by awesome-pages.
 nav:
   - Home: index.md
-  - Cell installation:
+  - Getting started:
       - cell-installation/index.md
       - Software:
           - Install and connect XtreeE Control: cell-installation/software/install-and-connect-xtreee-control.md
@@ -106,11 +112,13 @@ nav:
           - Pause and resume a print: guides/printing-operation/pause-and-resume-a-print.md
       - 5 · Session report:
           - guides/session-report/index.md
-      - Maintenance & recovery:
-          - guides/maintenance/index.md
-          - Motors won't power on: guides/maintenance/motors-wont-power-on.md
-          - Real flow doesn't match assigned flow: guides/maintenance/real-flow-doesnt-match-assigned-flow.md
-          - A motor reports an error code: guides/maintenance/a-motor-reports-an-error-code.md
+  # Maintenance & recovery, promoted to the top level. Its files stay under
+  # guides/maintenance/ so no URL changes.
+  - Troubleshooting:
+      - guides/maintenance/index.md
+      - Motors won't power on: guides/maintenance/motors-wont-power-on.md
+      - Real flow doesn't match assigned flow: guides/maintenance/real-flow-doesnt-match-assigned-flow.md
+      - A motor reports an error code: guides/maintenance/a-motor-reports-an-error-code.md
   - Wiki:
       - wiki/index.md
       - Glossary:
@@ -124,3 +132,5 @@ nav:
           - Settings: products/control/settings.md
           - Ink: products/control/ink.md
           - Data: products/control/data.md
+  - Download: download.md
+  - Known issues: known-issues.md

@@ -20,8 +20,13 @@ This set sits **beside the chain**. A fault interrupts whichever stage you were 
 
 ## Find your symptom
 
-- [Motors won't power on](motors-wont-power-on.md)
-- [Real flow doesn't match assigned flow](real-flow-doesnt-match-assigned-flow.md)
-- [A motor reports an error code](a-motor-reports-an-error-code.md)
+??? question "Motors won't power on"
+    [Go to the recovery guide](motors-wont-power-on.md)
+
+??? question "Real flow doesn't match assigned flow"
+    [Go to the recovery guide](real-flow-doesnt-match-assigned-flow.md)
+
+??? question "A motor reports an error code"
+    [Go to the recovery guide](a-motor-reports-an-error-code.md)
 
 If your symptom isn't here, it isn't documented yet — say so rather than filing it under the nearest product.
